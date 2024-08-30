@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "DOM Watcher Extension",
+  "version": "1.0",
+  "description": "Tracks modifications within the DOM of a selected website and sends notifications to a local server.",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["crush.js", "content.js"]
+    }
+  ]
+}
+
