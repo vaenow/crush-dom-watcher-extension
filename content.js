@@ -1,5 +1,8 @@
 // content.js
 
+// post /alert endpoint
+const ALERT_URL = 'https://crush.hk.xexlab.com/alert'
+
 const isChrome = !!window.chrome
 const isFirefox = typeof InstallTrigger !== 'undefined'
 const browser = isChrome ? 'chrome' : isFirefox ? 'firefox' : 'other'
@@ -26,7 +29,7 @@ const observer = new MutationObserver((mutations) => {
 
   // send data to server
   if (changeDetailsList.length) {
-    Crush.debounceSend('http://localhost:3000/alert', changeDetailsList)
+    Crush.debounceSend(ALERT_URL, changeDetailsList)
   }
 
 });
