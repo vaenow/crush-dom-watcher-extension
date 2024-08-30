@@ -9,6 +9,9 @@ Sends notifications of these changes to a local server
 - Chrome
 - Firefox 
 
+![screenshots01.png](statics%2Fscreenshots01.png)
+
+![screenshots02.png](statics%2Fscreenshots02.png)
 
 ## How to use
 
@@ -26,4 +29,5 @@ git clone https://github.com/vaenow/crush-dom-watcher-extension
 - swap the `manifest-firefox.json` and `manifest.json`
 - open firefox `about:debugging#/runtime/this-firefox`
 - load the directory `crush-dom-watcher-extension/`
+
 
